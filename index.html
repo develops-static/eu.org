@@ -1,61 +1,100 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>常用前端公共库加速服务 By statics.eu.org</title>
-<link rel="stylesheet" href="stylesheets/styles.css">
-<link rel="stylesheet" href="stylesheets/github-dark.css">
-<script src="libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="javascripts/main.js"></script>
-<!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="author" href="https://plus.google.com/109839096083180034412?rel=author" />
+<title>常用前端公共库加速服务 - statics.eu.org</title>
+<style type="text/css">
+body {text-align:center;margin:0px}
+body,td,textarea,p,select{font-size:12px;line-height:120%;font-family:Arial, Helvetica, sans-serif;word-break: break-all}
+a		{color: #000000;text-decoration: none;}
+a:hover	{color: #1562BF;text-decoration: none}
+img {border:none}
+input{padding:0px 3px}
+h1{font: 40px/48px "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;color: #f3f3f3;text-shadow: 0px 2px 0px #235796;margin: 0px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-ms-text-overflow: ellipsis;}
+
+#header{position: relative;margin: 0px auto 0px;background: #4276b6;-moz-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);-o-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);z-index: 99;-webkit-font-smoothing: antialiased;min-height: 76px;}
+
+.HccGolbalWidth		{width:100%;background:#4276b6;}
+.HccDescription{color: #d8d8d8;text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;font-size: 16px;margin: 0px;}
+#HccNav	{background:#2B6DD2;width:100%;margin:0px;border:none;}
+#HccNavMenu		{max-width:650px;width:100%;line-height:14px;background:#2B6DD2;padding:0px;overflow:auto; zoom:1;margin:auto;border-left:0px solid #FFF;border-right:0px solid #FFF;}
+
+#HccItem	{float:left;margin:0px;padding:9px 0px 9px 9px;font-size:14px;}
+#HccSearch	{float:right;margin:0px;padding:9px 9px 9px 0px;font-size:13px;}
+#HccSearch	.input{width:120px;height:12px;vertical-align:top;background-position:right center;background-image:url(//static.hechaocheng.cn/PublicHCC/images/serach_green_16x16.png);background-repeat:no-repeat;padding:2px 16px 2px 3px;border:1px solid #cde4f2;color:#888;}
+#HccSearch	.input:focus{color:#4d90fd}
+
+
+
+
+
+#HccBody		{max-width:650px;width:100%;margin: 0 auto;height:auto;overflow:hidden;}
+#HccMain	{max-width:650px;width:100%;text-align:left}
+
+
+
+
+
+#HccDiv		{max-width:630px;width:100%;margin: 0 9px;}
+#HccContent			{padding:0px 9px;margin-top: 10px;background: #fbfbfb;
+  -moz-border-radius: 3px;-webkit-border-radius: 3px;-o-border-radius: 3px;-ms-border-radius: 3px;-khtml-border-radius: 3px;border-radius: 3px;border: 1px solid #cbcbcb;
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
+  -o-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
+}
+.HccNR		{margin:0px auto 20px auto;}
+
+#fotter	{width:100%;margin:15px auto 0px auto;background:#F9F9F9;border-top:1px solid #CCC;}#bottom{color:#666;line-height:18px;margin:auto;padding:6px 0px;background:none;text-align:center;}#bottom a{color:#666;}#bottom a:hover {color:#000}</style>
+
 </head>
 <body>
-<header>
-	<h1>公共库</h1>
-	<p>常用前端公共库加速服务</p>
-</header>
-
-<form action="" target="_blank">
-<div id="banner">
-	<span id="logo"></span><a href="" class="button fork"><strong>公共库列表</strong></a>
-	<div class="downloads">
-		<span>Downloads:</span>
-		<ul>
-			<li><a href="" class="button">ZIP</a></li>
-			<li><input type="text" name="q" id="q" class="button" $="true" onfocus="c5t()" onblur="sXt()" placeholder="查找资料" autocomplete="off" /></li>
-		</ul>
+	<div id="header" class="HccGolbalWidth">
+		<div style="text-align:center"><h1>公共库</h1><span class="HccDescription">常用前端公共库加速服务</div>
 	</div>
-</div>
-</form>
-<!-- end banner -->
-
-<div class="wrapper">
-	<nav>
-		<ul></ul>
-	</nav>
-	<section>
-		<h3> <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>欢迎来到statics.eu.org公共库</h3>
-		<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-		<h3> <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-		<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-		<h3> <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
-		<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-		<h3> <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-		<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-		<h3> <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-		<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-	</section>
 	
-	<footer>
-		<p>Project maintained by <a href="http://statics.eu.org/">statics.eu.org</a></p>
-		<p><small>Hosted on GitHub</small></p>
-	</footer>
-</div>
-<!--[if !IE]><script>fixScale(document);</script><![endif]-->
-<script type="text/javascript" src="libs/input.js/1.1.0/input.js.min.js"></script>
+	<div id="HccNav">
+		<div id="HccNavMenu" class="HccGolbalWidth">
+			<div id="HccItem">
+				<select>
+					<option value ="volvo">Volvo</option>
+					<option value ="volvo">Volvo</option>
+					<option value ="volvo">Volvo</option>
+				</select>
+			</div>
+			<form action="http://s.hechaocheng.cn/cse/search" target="_blank">
+			<input type="hidden" name="s" value="17714625536540733018">
+			<div id="HccSearch">
+				<input type="text" name="q" id="q" class="input" $="true" onfocus="c5t()" onblur="sXt()" placeholder="查找资料" autocomplete="off">
+			</div>
+			</form>
+		</div>
+	</div>
+	
+	<div id="HccBody">
+		<div id="HccMain">
+			<div id="HccDiv">
+				<div id="HccContent">
+					<h3>欢迎来到statics.eu.org公共库</h3>
+					<div class="HccNR">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fotter">
+		<div id="bottom" class="HccGolbalWidth">
+			<p style="margin:3px 0px 6px 0px;line-height:18px;">Project maintained by statics.eu.org | Hosted on GitHub</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="libs/input.js/1.1.0/input.js.min.js"></script>
 </body>
 </html>
